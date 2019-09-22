@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password:
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: awesome_interview_scheduler_development
+
+test:
+  <<: *default
+  database: awesome_interview_scheduler_test
+
+production:
+  <<: *default
+  database: awesome_interview_scheduler_production
+  username: awesome_interview_scheduler
+  password: <%= ENV['AWESOME_INTERVIEW_SCHEDULER_DATABASE_PASSWORD'] %>

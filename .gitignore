@@ -1,0 +1,30 @@
+/.bundle
+
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+/storage/*
+!/storage/.keep
+
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+/public/assets*
+/public/packs
+/public/packs-test
+.byebug_history
+
+/config/master.key
+
+/.env
+/vendor/bundle
+
+# ローカルデータ
+/public/uploads
+
+# macos用
+.DS_Store
