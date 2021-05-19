@@ -6,7 +6,7 @@ gem 'rails', '5.2.2.1'
 
 #ミドル
 gem 'pg'
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 4.3'
 
 #環境変数
 gem 'dotenv-rails'
